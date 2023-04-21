@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    input:enabled{
+        background: blue;
+        color: white;
+    
+    }
+    /* <입력 할 수 있는 상태의 input태그의 배경과 글자 색상 지정> */
+    input:disabled{
+        background: black;
+    }
+    input:focus{
+        background: orange;
+    }
+</style>
+<body>
+    <h1>enabled</h1>
+    <p>
+        <input type="text">
+    </p>
+
+    <h1>disabled</h1>
+    <p>
+        입력을 할 수 없는 상태로 만들기
+    <input disabled="disabled"/>
+</p>
+</body>
+</html>

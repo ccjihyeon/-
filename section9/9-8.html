@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul{
+            overflow: hidden;
+        }
+        li{
+            list-style: none;
+            float: left;
+            padding: 15px;
+        }
+        li:nth-child(2n){
+            background: gray;
+            color: pink;
+        
+        }
+        
+        li:nth-child(2n+1){
+            background: black;
+            color: ffd800;
+        }
+        li:first-child{
+            background: black;
+            color: white;
+           }
+           /* 태그 중 첫번째에 해당하는 li 태그는 배경 색상과 글자색상을 지정 */
+           li:last-child{
+            background: gray;
+            color: green;
+           }
+           /* li태그중 마지막 번쨰에 해당하는 li 태그들의 배경 색상과 글자 색상을 지정 */
+    </style>
+</head>
+<body>
+    <ul>
+        <li>menu1</li>
+        <li>menu2</li>
+        <li>menu3</li>
+        <li>menu4</li>
+        <li>menu5</li>
+        <li>menu6</li>
+    </ul>
+</body>
+</html>
