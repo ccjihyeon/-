@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    a{
+        text-decoration: none;
+    }
+    li{
+        list-style: none;
+    }
+    image{
+        display: block;
+        border: none;
+    }
+    body{
+        font-family: 'verdane';
+        font-size: 14px;
+        color: black;
+        line-height: 28px;
+    }
+    /* header */
+    header{
+        width: 1000px;
+        height: 100px;
+        margin: 0 auto;
+        margin-top: 10px;
+        border: 2px solid black;
+        overflow: hidden;
+        box-sizing: border-box;
+    }
+
+    header h1{
+        width: 200px;
+        line-height: 100px;
+        float: left;
+        text-align: center;
+      
+    }
+    nav{
+        float: right;
+        overflow: hidden;
+        position: relative; 
+    /* 상대 좌표 */
+    }
+    nav ul{
+        overflow: hidden;
+        background-color: white;
+    
+    }    
+    nav ul:nth-of-type(1) li{
+        float:left;
+        padding-left: 20px;
+        background-color: rgb(231, 172, 182);
+        line-height: 30px; 
+        margin-top: 10px;
+    }
+    
+    nav ul:nth-of-type(2) li{
+        float: left;
+        padding-left: 20px;
+        background-color: rgb(225, 84, 108);
+        line-height: 30px;
+        margin-top: 10px;
+    }
+    #main { 
+        width: 1000px;
+        overflow: hidden;
+        margin: 10px auto;
+    }
+    #main section {
+        width: 700px;
+        overflow: hidden;
+        float: left;
+    }
+    #main section article { 
+        width: 700px;
+        border: 2px solid black;
+        overflow: hidden;
+        padding: 20px;
+        margin-bottom: 10px;
+        box-sizing: border-box;
+    }
+
+    article>h2{
+        background-color: antiquewhite;
+    }
+
+    aside{
+        width: 280px;
+        float: right;
+        overflow: hidden;
+        border: 2px solid black;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+
+    aside .bannerbox{
+        background-color: rgb(216, 139, 244);
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    footer { 
+        width: 1000px;
+        height: 50px;
+        line-height:  50px;
+        margin: 10px auto;
+        border: 2px solid black;
+        text-align: center;
+        box-sizing:  border-box;
+        background-color: antiquewhite;
+    }
+</style>
+<body>
+    <header>
+        <h1>wep-logo</h1>
+
+        <nav>
+            <ul>
+                <li>menu-1</menu></li>
+                <li>menu-1</menu></li>
+                <li>menu-1</menu></li>
+                <li>menu-1</menu></li>
+            </ul>
+
+            <ul>
+                <li>menu-2</menu-2></menu></li>
+                <li>menu-2</menu></li>
+                <li>menu-2</menu></li>
+                <li>menu-2</menu></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <!-- 본문을 감싸주는 박스는 일단 선택자 박스로 지정  -->
+    <div id="main">
+        <!-- 왼쪽 section(시멘틱 태그) -->
+        <section>
+            <article>
+                <h2>main article</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                    Eligendi minus magni, aliquid inventore impedit eum architecto officiis? Aut consequatur amet,
+                    eum soluta ad sint obcaecati officia dignissimos quos animi molestiae!
+                </p>
+            </article>
+           
+            <article>
+                <h2>main article</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                    Eligendi minus magni, aliquid inventore impedit eum architecto officiis? Aut consequatur amet,
+                    eum soluta ad sint obcaecati officia dignissimos quos animi molestiae!
+                </p>
+            </article>
+            <article>
+                <h2>main article</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                    Eligendi minus magni, aliquid inventore impedit eum architecto officiis? Aut consequatur amet,
+                    eum soluta ad sint obcaecati officia dignissimos quos animi molestiae!
+                </p>
+            </section>
+                <aside>
+                    <h2>Right aside</h2>
+                    <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde, 
+                        tempore perferendis rerum ullam hic laboriosam pariatur 
+                        optio eius similique amet consequuntur molestiae nisi quo a repellat in ex porro repudiandae.
+                    </p>
+                    <label for="emil">mail</label>
+                    <input type="emil">
+                    <button>mailto</button>
+                    <div class="bannekbox">
+                        <h2>text</h2>
+                        <p>banner</p>
+                    </div>
+                </aside>
+    </div>
+    <footer>
+        <p>html5 copyright</p>
+    </footer>
+</body>
+</html>
