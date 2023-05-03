@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0 auto;
+       padding: 0 auto;
+    }
+    header{
+        width: 996px;
+        border: 1px solid black;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: space-between;
+    }
+    header h1{
+        width: 200px; 
+        height: 100%; 
+        line-height: 100PX;   
+        background-color: bisque;
+        text-align: center;
+    }
+
+    nav{
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction:column;
+        gap: 8px;
+    }
+    nav ul{
+        display: flex;
+        list-style: none;
+        background-color: palevioletred;
+    }    
+    .top-menu{
+        background-color: palevioletred;
+     }
+     section{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 10px;
+        width: 696px;
+        overflow: hidden;
+        flex-direction: column;
+        /*컨텐츠 세로정렬 속성*/
+        box-sizing: border-box;
+     }
+     #main{
+        margin-top: 10px;
+        width: 1000px;
+        overflow: hidden;
+        box-sizing: border-box;        
+        display: flex;
+     }
+     article{
+        margin-bottom: 10px;
+        border: 1px solid black;
+     }
+     p{
+        margin: 5px;
+     }
+
+     h2{
+        margin: 5px;
+        box-sizing: border-box;
+        background-color: palevioletred;
+
+     }
+     aside{
+    
+        width: 294px;
+        height: 358px;
+        margin-top: 10px;
+        border: 1px solid black;
+     }
+     .bannerbox{
+        text-align: center;
+         }
+     footer{
+            width: 1000px;
+            overflow: hidden;
+            background-color: pink;
+            text-align: center;
+         }
+         footer>p{
+            text-align: center;
+         }
+    label{
+            margin: 5px;
+         }
+
+
+
+
+</style>
+
+
+
+
+
+
+<body>
+    <header>
+        <h1>wep-logo</h1>
+
+        <nav>
+            <ul class="top-menu">
+                <li>menu-1</li>
+                <li>menu-1</li>
+                <li>menu-1</li>
+                <li>menu-1</li>
+            </ul>
+
+            <ul>
+                <li>menu-2</li>
+                <li>menu-2</li>
+                <li>menu-2</li>
+                <li>menu-2</li>
+            </ul>
+        </nav>
+    </header>
+    
+    <!-- 본문을 감싸주는 박스는 일단 선택자 박스로 지정  -->
+    <div id="main">
+        <!-- 왼쪽 section(시멘틱 태그) -->
+        <section>
+            <article>
+                <h2>main article</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                    Eligendi minus magni, aliquid inventore impedit eum architecto officiis? Aut consequatur amet,
+                    eum soluta ad sint obcaecati officia dignissimos quos animi molestiae!
+                </p>
+            </article>
+           
+            <article>
+                <h2>main article</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                    Eligendi minus magni, aliquid inventore impedit eum architecto officiis? Aut consequatur amet,
+                    eum soluta ad sint obcaecati officia dignissimos quos animi molestiae!
+                </p>
+            </article>
+            <article>
+                <h2>main article</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                    Eligendi minus magni, aliquid inventore impedit eum architecto officiis? Aut consequatur amet,
+                    eum soluta ad sint obcaecati officia dignissimos quos animi molestiae!
+                </p>
+            </section>
+        <aside>
+            <h2>Right aside</h2>
+            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde, 
+                tempore perferendis rerum ullam hic laboriosam pariatur 
+                optio eius similique amet consequuntur molestiae nisi quo a repellat in ex porro repudiandae.
+            </p>
+            <label for="emil">mail</label>
+            <input type="emil">
+            <button>mailto</button>
+            <div class="bannerbox">
+                <h2>text</h2>
+                <p>banner</p>
+            </div>
+        </aside>
+    </div>
+    <footer>
+        <p>html5 copyright</p>
+    </footer>
+</body>
+</html>
+
+
+
