@@ -62,18 +62,96 @@
     h1{
         font-size: 3rem;
         color: var(--white-500);
-        font-weight: 700;
-        margin-bottom: 20px;
+        font-weight: 700px;
+        margin-top: 20px;
+        margin-bottom: 50px;
     }
    form{
         width: 100%;
         max-width: 610px;
+        position: relative;
    }
     input{
+        border-radius: 5px;
         display: block;
+        border: 1px;
         width: 100%;
         height: 40px;
+        padding-left: 30px;
+        font-size: medium;
+        font-weight: bold;
     }
+    svg{
+        top: 86%;
+        transform: translateY(-155%);
+        position: absolute;
+        left: 10px;
+        width: 15px;
+        height: 15px;
+        color: gray; 
+    }
+    #main-content{
+        display: block;
+    }
+    .main-help{
+        
+    }
+    h2{
+    margin-top: 104px;
+    font-size: 2rem;
+    line-height: 100%;
+    margin-bottom: 0;
+    font-weight: 700;
+    text-align: center;
+    padding-bottom: 10px;
+    }
+    .help{
+        text-align: center;
+        font-size: larger;
+        line-height: 30px;
+    }
+    .main-continer{
+        padding-left: 5px;
+        padding-right: 5px;
+        margin: 0;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        width: 100%;  
+    }
+    .notice{
+        background: white;
+        padding: 5px;
+        width: 240px;
+        height: 240px;
+        margin: 10px;
+        color: #ccc;
+        text-align: center;
+        border-radius: 5px;
+        border: 1px solid ;
+        cursor: pointer;
+    }
+    .imgcontent{
+        width: 106px; 
+    }
+    h3{
+        font-weight: bold;
+        font-size: larger;
+        text-align: center;
+        transform: translateY(125px);
+    }
+    .notice>a>p{
+        transform: translateY(30px);
+    }
+    
+    
+
+
+    
+
+   
+
+
     
 
    
@@ -101,77 +179,79 @@
             </nav>
         </div>
     </header> 
-    <section id="main-banner">
-        <div class="banner-conteiner">
-            <h1>고객 지원 센터</h1> 
-            <form class="search form" action="search" method="get">
-            <input class="search input" type="search" placeholder="검색">
-            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" focusable="false" viewBox="0 0 12 12" class="search-iconb" aria-hidden="true">
-                <circle cx="4.5" cy="4.5" r="4" fill="none" stroke="currentColor"></circle>
-                <path stroke="currentColor" stroke-linecap="round" d="M11 11L7.5 7.5"></path>
-              </svg>
-        </form>
-        </div>
-       
-    </section>
-    <main class="main-content">
-        <div class="main hepl">
+    <main id="main-content">
+        <section id="main-banner">
+            <div class="banner-conteiner">
+                <h1>고객 지원 센터</h1> 
+                <form class="search form" action="search" method="get">
+                <input class="search input" type="search" placeholder="검색">
+                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" focusable="false" viewBox="0 0 12 12" class="search-iconb" aria-hidden="true">
+                    <circle cx="4.5" cy="4.5" r="4" fill="none" stroke="currentColor"></circle>
+                    <path stroke="currentColor" stroke-linecap="round" d="M11 11L7.5 7.5"></path>
+                </svg>
+                </form>
+            </div>  
+        </section>
+        <div class="main-hepl">
             <h2>도움이 필요하신가요? 저희가 도와드리겠습니다.</h2>
-            <p>계정 설정부터 승인까지 Discord와 관련된 모든것을 저희한테 문의하세요.<br>
-            discord를 시작한 지 얼마 안 되어 팁을 찾고 계신가요? 그렇다면, 저희의</p>
-            <a class="help" href="#">초보자를 위한 가이드를 확인해보세요!</a>
+            <div class="help">
+                <p>계정 설정부터 승인까지 Discord와 관련된 모든것을 저희한테 문의하세요.<br>
+                Discord를 시작한 지 얼마 안 되어 팁을 찾고 계신가요? 그렇다면, 저희의
+                <a href="#">초보자를 위한 가이드를 확인해보세요!</a></p>
+            </div>
         </div>  
-        <section id="main-continer">
-            <div class="main">
-                <h3>공지사항</h3>
-                <a href="#"><img src="공지사항.svg" alt="">
-                    <p>들어보세요. 무언가 심상치 않은 일이 벌어지고 있습니다.</p></a>
+        <section class="main-continer">
+            <div class="notice">
+                <a href=""><h3>공지사항</h3></a> 
+                <a href="#"><img class="imgcontent" src="공지사항.svg" alt="">
+                <p>들어보세요. 무언가 심상치 않은 일이 벌어지고 있습니다.</p></a>     
             </div>
-            <div class="main">
-                <a href="#"><h3>인터베이스</h3><img src="인터베이스.svg" alt="">이 버튼은 무엇인가요?!</a>
+            <div class="">
+                <a href="#"><h3>인터베이스</h3></a>
+                <a href="#"><img class="imgcontent" src="인터베이스.svg" alt="">이 버튼은 무엇인가요?!</a>               
             </div>
-            <div class="main">
-                <h3>계정설정</h3>
-                <a href="#"><img src="계정설정.svg" alt="">당신도 당신의 계정도 특별한 눈송이입니다.</a>
-                </div>
-            <div class="main">
-                <h3>시작하기</h3>
-                <a href="#"><img src="시작하기.svg" alt="">첫 단추를 제대로 끼워야 합니다!</a>
+            <div class="">
+                <a href="#"><h3>계정설정</h3></a>
+                <a href="#"><img class="imgcontent" src="계정설정.svg" alt="">당신도 당신의 계정도 특별한 눈송이입니다.</a>
             </div>
-            <div class="main">
-                <h3>서버 설정</h3>
-                <a href="#"><img src="서버설정.svg" alt="">실내 장식 만큼 재미있는것.</a>
+            <div class="">
+                <a href="#"><h3>시작하기</h3></a>
+                <a href="#"><img class="imgcontent" src="시작하기.svg" alt="">첫 단추를 제대로 끼워야 합니다!</a>
             </div>
-            <div class="main"> 
-                <h3>커뮤니티 프로그램</h3>
-                <a href="#"><img src="커뮤니티.svg" alt="">HypeSquaders를 위한 광고,파트너를 위한 파티</a>
+            <div class="">
+                <a href="#"><h3>서버 설정</h3></a>
+                <a href="#"><img class="imgcontent" src="서버설정.svg" alt="">실내 장식 만큼 재미있는것.</a>
             </div>
-            <div class="main">
-                <h3>Nitro</h3>
-                <a href="#"><img src="nitro.svg" alt="">쓰러질 떄까지 쇼핑하시면 안돼요! 저희가 도와드릴게요.</a>
+            <div class=""> 
+                <a href="#"><h3>커뮤니티 프로그램</h3><div>
+                <a href="#"><img class="imgcontent" src="커뮤니티.svg" alt="">HypeSquaders를 위한 광고,파트너를 위한 파티</a>
             </div>
-            <div class="main">
-                <h3>청구서</h3>
-                <a href="#"><img src="청구서.svg" alt=""> 은행 계좌 잔액을 보는 기분.</a>
+            <div class="">
+                 <a href="#"><h3>Nitro</h3></a>
+                <a href="#"><img class="imgcontent" src="nitro.svg" alt="">쓰러질 떄까지 쇼핑하시면 안돼요! 저희가 도와드릴게요.</a>
             </div>
-            <div class="main">
-                <h3>신뢰&보안</h3>
-                <a href="#"><img src="보안.svg" alt="">안전하고 건전하게</a>
+            <div class="">
+                <a href="#"><h3>청구서</h3></a>
+                <a href="#"><img class="imgcontent" src="청구서.svg" alt=""> 은행 계좌 잔액을 보는 기분.</a>
             </div>
-            <div class="main">
-                <h3>자주 묻는 질문</h3>
-                <a href="#"><img src="자주묻는질문.svg" alt=""> 스스로 해결해 보아요.</a>
+            <div class="">
+                <a href="#"><h3>신뢰&보안</h3></a>
+                <a href="#"><img class="imgcontent" src="보안.svg" alt="">안전하고 건전하게</a>
+            </div>
+            <div class="">
+                <a href="#"><h3>자주 묻는 질문</h3></a>
+                <a href="#"><img class="imgcontent" src="자주묻는질문.svg" alt=""> 스스로 해결해 보아요.</a>
             </div>
             <div class="hepl-text">
             <h2>도움을 받을 수 있는 다른 방법</h2>
             </div>
             <div class="main">
-                <h3>게임개발자</h3>
-                <a href="#"><img src="게임 개발자.svg" alt="">Discord의 API와 SDK를 이용한 <br>봇,앱,게임 개발 지원의집!</a>
+                <a href="#"><h3>게임개발자</h3></a>  
+                <a href="#"><img class="imgcontent" src="게임 개발자.svg" alt="">Discord의 API와 SDK를 이용한 <br>봇,앱,게임 개발 지원의집!</a>
             </div>
             <div class="main">
-                <h3>Twitter</h3>
-                <a href="#"><img src="트위터.svg" alt=""> 질문이 있으신가요? 저희에게 트윗을 보내주세요!</a>
+                <a href="#"><h3>Twitter</h3></a>
+                <a href="#"><img class="imgcontent" src="트위터.svg" alt=""> 질문이 있으신가요? 저희에게 트윗을 보내주세요!</a>
             </div>
         </section>
     </main>
@@ -195,22 +275,22 @@
                     <img src="22df88a591db1baf678cb7435a7ec52317daba6f.svg" alt="">
                 </a>
             </div>
-                <div class="footerrogo">
+                <div class="footer-rogo">
                     <a href="#"><img src="푸터로고.svg" alt=""></a>
                 </div>
-                <div class="footer text">
+                <div class="footer-first ">
                     <a href="#">다운로드</a>
                     <a href="#">지원</a>
                     <a href="#">피드백</a>
                     <a href="#">상태</a>
                 </div>
-                <div class="footer text">
+                <div class="footer-second">
                     <a href="#">파트너</a>
                     <a href="#">HypeSquad</a>
                     <a href="#">상점</a>
                     <a href="#">제품 이미지</a>
                 </div>
-                <div class="footer text">
+                <div class="footer-third">
                     <a href="#">회사</a>
                     <a href="#">직업</a>
                     <a href="#">블로그</a>
