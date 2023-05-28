@@ -563,7 +563,11 @@
         margin-top: 15px;
         text-align: left;
     }
-        @media screen and (max-width:1400px){
+      
+    
+    
+    
+        @media screen and (max-width:767px){
             .content{
                 display: none;
             }
@@ -571,12 +575,13 @@
                 width: 46px;
                 height: 18px;
                 display: inline;
-                border: 1px solid transparent;
-                border-top-left-radius: 25px;
-                border-bottom-left-radius: 25px;
-                border-top-right-radius: 25px;
-                border-bottom-right-radius: 25px;
-                background-color: rgb(86, 86, 227);
+                border: transparent;
+                background-color: transparent;
+                vertical-align: middle;
+                transform:translateY(52%);
+            }
+            .ham>svg{
+                color: rgb(27, 27, 195);
             }
             .ham:hover{
                 cursor: pointer;
