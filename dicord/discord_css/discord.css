@@ -1,0 +1,584 @@
+
+
+    * {
+    box-sizing: border-box;
+    }
+    .header{
+        max-width: 1160px;
+        margin: 0 auto;
+        padding: 0 5%;
+        position: relative;
+        top: 0;
+        align-items: center;
+        display: flex;
+        height: 64px;
+        justify-content: space-between;
+    }
+    .header-container{
+        width: 1160px;
+        display: flex;
+        justify-content: space-between;
+    }
+    a{
+        text-decoration: none;
+    }
+    .content{
+        color: rgb(52, 52, 218);
+        font-weight: bold;
+    }
+    .rogin{
+        color:rgb(52, 52, 218);
+        font-weight: bold;
+    }
+    .ham{
+        display: none;
+    }
+    #main-banner{
+        height: 320px;
+        padding: 0 20%;
+        background-image: url(../discord_img/b7e9dce75f9edb23504e13b4699e208f204e5015.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center 80%;
+    }
+    .banner-conteiner{
+        font-size: 44px;
+        font-weight: 700;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 80px;
+    }
+    h1{
+        font-size: 3rem;
+        color: var(--white-500);
+        font-weight: 700px;
+        margin-top: 20px;
+        margin-bottom: 50px;
+    }
+   form{
+        width: 100%;
+        max-width: 610px;
+        position: relative;
+   }
+    input{
+        border-radius: 5px;
+        display: block;
+        border: 1px;
+        width: 100%;
+        height: 40px;
+        padding-left: 30px;
+        font-size: medium;
+        font-weight: bold;
+    }
+    svg{
+        top: 86%;
+        transform: translateY(-155%);
+        position: absolute;
+        left: 10px;
+        width: 15px;
+        height: 15px;
+        color: gray; 
+    }
+    #main-content{
+        display: block;
+        overflow: hidden;
+    }
+    h2{
+    margin-top: 104px;
+    font-size: 2rem;
+    line-height: 100%;
+    margin-bottom: 0;
+    font-weight: 700;
+    text-align: center;
+    padding-bottom: 10px;
+    }
+    .help{
+        text-align: center;
+        font-size: larger;
+        line-height: 30px;
+    }
+    .help>p>a{
+        color: rgba(0, 103, 224, 1);
+    }
+    .section-continer{
+        padding-left: 5px;
+        padding-right: 5px;
+        margin: 0;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        width: 100%;
+    }
+    .notice{
+        background: white;
+        background-image: url("../discord_img/공지사항.svg")  ;
+        background-repeat: no-repeat;
+        background-size: 106px;
+        background-position: center 14px;
+       
+        padding: 5px;
+        width: 240px;
+        height: 250px;
+        margin: 10px;
+        color: #ccc;
+        text-align: center;
+        border-radius: 5px;
+        border: 1px solid ;
+        cursor: pointer;
+    }
+    .imgcontent{
+        width: 106px; 
+        transform: translateY(-110%);
+    }
+    h3{
+        font-size: 1.25rem;
+        font-weight: 600;
+        color: rgb(71, 71, 254);
+        margin-top: 116px;
+        transform: translateY(55%);
+    }
+    .notice>a>p{
+        font-size: 0.9rem;
+        font-weight: 500px;
+        width: 200px;
+        margin: 30px auto 0;
+        color: #656565;
+        line-height: normal;
+    }
+    .interface{
+        background: white;
+        background-image: url("../discord_img/인터베이스.svg")  ;
+        background-repeat: no-repeat;
+        background-size: 106px;
+        background-position: center 14px;
+
+
+        padding: 5px;
+        width: 240px;
+        height: 250px;
+        margin: 10px;
+        color: #ccc;
+        text-align: center;
+        border-radius: 5px;
+        border: 1px solid ;
+        cursor: pointer;
+    }
+
+    .interface>a>p{
+        font-size: 0.9rem;
+        font-weight: 500px;
+        width: 200px;
+        margin: 30px auto 0;
+        color: #656565;
+    }
+    .setup{
+        background: white;
+        background-image: url("../discord_img/계정설정.svg")  ;
+        background-repeat: no-repeat;
+        background-size: 106px;
+        background-position: center 14px;
+
+        padding: 5px;
+        width: 240px;
+        height: 250px;
+        margin: 10px;
+        color: #ccc;
+        text-align: center;
+        border-radius: 5px;
+        border: 1px solid ;
+        cursor: pointer;
+
+    }
+    .setup>a>p{
+        font-size: 0.9rem;
+        font-weight: 500px;
+        width: 200px;
+        margin: 30px auto 0;
+        color: #656565;
+        line-height: normal;
+
+    }
+  
+    .start{
+        background: white;
+        background-image: url("../discord_img/시작하기.svg")  ;
+        background-repeat: no-repeat;
+        background-size: 106px;
+        background-position: center 14px;
+
+        padding: 5px;
+        width: 240px;
+        height: 250px;
+        margin: 10px;
+        color: #ccc;
+        text-align: center;
+        border-radius: 5px;
+        border: 1px solid ;
+        cursor: pointer;
+
+    }
+    .start>a>p{
+        font-size: 0.9rem;
+        font-weight: 500px;
+        width: 200px;
+        margin: 30px auto 0;
+        color: #656565;
+        line-height: normal;
+        
+    }
+    .server{
+        background: white;
+        background-image: url("../discord_img/서버설정.svg")  ;
+        background-repeat: no-repeat;
+        background-size: 106px;
+        background-position: center 14px;
+
+        padding: 5px;
+        width: 240px;
+        height: 250px;
+        margin: 10px;
+        color: #ccc;
+        text-align: center;
+        border-radius: 5px;
+        border: 1px solid ;
+        cursor: pointer;
+
+    }
+    .server>a>p{
+        font-size: 0.9rem;
+        font-weight: 500px;
+        width: 200px;
+        margin: 30px auto 0;
+        color: #656565;
+    
+    }
+    .community{
+        background: white;
+        background-image: url("../discord_img/커뮤니티.svg")  ;
+        background-repeat: no-repeat;
+        background-size: 106px;
+        background-position: center 14px;
+
+        padding: 5px;
+        width: 240px;
+        height: 250px;
+        margin: 10px;
+        color: #ccc;
+        text-align: center;
+        border-radius: 5px;
+        border: 1px solid ;
+        cursor: pointer;
+
+    }
+    .community>a>p{
+        font-size: 0.9rem;
+        font-weight: 500px;
+        width: 200px;
+        margin: 30px auto 0;
+        color: #656565;
+        line-height: normal;
+    
+    }
+   .nitro{
+        background: white;
+        background-image: url("../discord_img/nitro.svg")  ;
+        background-repeat: no-repeat;
+        background-size: 106px;
+        background-position: center 14px;
+
+        padding: 5px;
+        width: 240px;
+        height: 250px;
+        margin: 10px;
+        color: #ccc;
+        text-align: center;
+        border-radius: 5px;
+        border: 1px solid ;
+        cursor: pointer;
+
+    }
+   .nitro>a>p{
+        font-size: 0.9rem;
+        font-weight: 500px;
+        width: 200px;
+        margin: 30px auto 0;
+        color: #656565;
+        line-height: normal;
+    
+    }
+    .bill{
+        background: white;
+        background-image: url("../discord_img/청구서.svg")  ;
+        background-repeat: no-repeat;
+        background-size: 106px;
+        background-position: center 14px;
+
+        padding: 5px;
+        width: 240px;
+        height: 250px;
+        margin: 10px;
+        color: #ccc;
+        text-align: center;
+        border-radius: 5px;
+        border: 1px solid ;
+        cursor: pointer;
+
+        }
+    .bill>a>p{
+        font-size: 0.9rem;
+        font-weight: 500px;
+        width: 200px;
+        margin: 30px auto 0;
+        color: #656565;
+    
+    }
+    .security{
+        background: white;   
+        background-image: url("../discord_img/보안.svg")  ;
+        background-repeat: no-repeat;
+        background-size: 106px;
+        background-position: center 14px;
+
+        padding: 5px;
+        width: 240px;
+        height: 250px;
+        margin: 10px;
+        color: #ccc;
+        text-align: center;
+        border-radius: 5px;
+        border: 1px solid ;
+        cursor: pointer;
+
+    }
+    .security>a>p{
+        font-size: 0.9rem;
+        font-weight: 500px;
+        width: 200px;
+        margin: 30px auto 0;
+        color: #656565;
+
+    }
+    .question{
+        background: white;       
+        background-image: url("../discord_img/자주묻는질문.svg")  ;
+        background-repeat: no-repeat;
+        background-size: 106px;
+        background-position: center 14px;
+
+        padding: 5px;
+        width: 240px;
+        height: 250px;
+        margin: 10px;
+        color: #ccc;
+        text-align: center;
+        border-radius: 5px;
+        border: 1px solid ;
+        cursor: pointer;
+
+    }
+    .question>a>p{
+        font-size: 0.9rem;
+        font-weight: 500px;
+        width: 200px;
+        margin: 30px auto 0;
+        color: #656565;
+    }
+    .hepl-intro>h2{ 
+        width: 600px;
+        margin-bottom: 10px;
+    }
+    .developer{
+        background: white;
+        background-image: url("../discord_img/게임 개발자.svg")  ;
+        background-repeat: no-repeat;
+        background-size: 106px;
+        background-position: center 14px;
+
+        padding: 5px;
+        width: 260px;
+        height: 260px;
+        margin: 10px;
+        color: #ccc;
+        text-align: center;
+        border-radius: 5px;
+        border: 1px solid ;
+        cursor: pointer;
+    }
+    .developer>a>P{
+        font-size: 0.9rem;
+        width: 200px;
+        margin: 30px auto 0;
+        color: #656565;
+        line-height: normal;
+    }
+    .twitter{
+        background: white;
+        background-image: url("../discord_img/트위터.svg")  ;
+        background-repeat: no-repeat;
+        background-size: 106px;
+        background-position: center 14px;
+
+        padding: 5px;
+        width: 260px;
+        height: 260px;
+        margin: 10px;
+        color: #ccc;
+        text-align: center;
+        border-radius: 5px;
+        border: 1px solid ;
+        cursor: pointer;
+    }
+    .twitter>a>P{
+        font-size: 0.9rem;
+        width: 200px;
+        margin: 30px auto 0;
+        color: #656565;
+        line-height: normal;
+    }
+    footer{
+        background-color: #121315;
+        width: 100%;
+        overflow: hidden;
+        margin-top: 70px;
+        padding-top: 50px;
+    }
+    .footer-conteiner{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        display: flex;
+        width: 100%;
+        max-width: 1100px;
+        position: relative;
+        margin: 0 auto;
+    }
+    .footer-display{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+
+        width: 814px;
+        height: 145px;
+        background-image: url(../discord_img/c9f23a6ae41ebc0d9c21b08c2158c112fd5847b2.png);
+        background-size: 814px 145px;
+        justify-content:center;
+        position: relative;
+    }
+    .footer-button{
+        margin: 0 auto;
+        width: 250px;
+        height: 42px;
+        border: 1px solid transparent;
+        border-top-left-radius:25px;
+        border-bottom-left-radius:25px ;
+        border-top-right-radius:25px;
+        border-bottom-right-radius:25px ;
+        background-color: rgb(80, 162, 80);
+        text-align: center;
+        font-size: medium;
+        font-weight: bold;
+        color: #fff;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 50px;
+    }
+    .footer-pc{
+        position: absolute;
+        transform: translate(-320px, 58px);
+    }
+    .footer-android{
+        position: absolute;
+        transform: translate( -28px, 58px);
+    }
+    .footer-apple{
+        position: absolute;
+        transform: translate( 66px, 58px);
+    }
+    .footer-windows{
+        position: absolute;
+        transform: translate( 214px, 58px);
+    }
+    .footer-mac{
+        position: absolute;
+        transform: translate( 284px, 58px);
+    }
+    .footer-text{
+        width: 100%;
+        border-top: 1px solid rgba(219,221,225,.1);
+        display: flex;
+        padding: 0 30px 50px;
+    }
+    .footer-rogo{
+        display: flex;
+        flex-direction: row;
+        height: 70px;  
+        align-items: center;
+        margin-top: 20px;
+    }
+    .gap{
+        width: 688px;
+        height: 100%;
+    }
+    .footer-first{
+        margin-top: 20px;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: space-between;
+        width: 100%;
+    }
+    .footer-first>a{
+        color: #fff;
+        line-height: 1;
+        margin-top: 15px; 
+        text-align: left;
+    }
+    .footer-second{
+        margin-top: 20px;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: space-between;
+        width: 100%;
+    }
+    .footer-second>a{
+        color: #fff;
+        line-height: 1;
+        margin-top: 15px;
+        text-align: left; 
+    }
+    .footer-third{
+        margin-top: 20px;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: space-between;
+        
+        width: 100%;
+    }
+    .footer-third>a{
+        color: #fff;
+        line-height: 1;
+        margin-top: 15px;
+        text-align: left;
+    }
+        @media screen and (max-width:1400px){
+            .content{
+                display: none;
+            }
+            .ham{
+                width: 46px;
+                height: 18px;
+                display: inline;
+                border: 1px solid transparent;
+                border-top-left-radius: 25px;
+                border-bottom-left-radius: 25px;
+                border-top-right-radius: 25px;
+                border-bottom-right-radius: 25px;
+                background-color: rgb(86, 86, 227);
+            }
+            .ham:hover{
+                cursor: pointer;
+            }
+        }
